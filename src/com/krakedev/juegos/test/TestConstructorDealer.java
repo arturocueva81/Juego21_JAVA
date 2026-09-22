@@ -6,6 +6,8 @@ public class TestConstructorDealer {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		//3. Prueba inicial
 		Dealer d= new Dealer();
 		
 		System.out.println("NAIPES GENERADOS : ");
