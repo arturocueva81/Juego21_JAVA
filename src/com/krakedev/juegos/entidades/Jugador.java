@@ -25,5 +25,13 @@ public class Jugador {
 	public void recibirCarta(Carta c) {
 		cartas.add(c);
 	}
+	
+	//7 metodo imprimir
+	public void imprimir() {
+	    System.out.println("Jugador: " + nickname);
+	    for (Carta carta : cartas) {
+	        carta.imprimir();
+	    }
+	}
 
 }

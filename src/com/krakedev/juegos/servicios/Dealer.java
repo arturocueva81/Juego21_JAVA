@@ -28,11 +28,11 @@ public class Dealer {
 		ArrayList<String> palos = new ArrayList<String>();
 		
 		palos.add("CN"); // corazon negro
-		palos.add("T "); //trebol
+		palos.add("T"); //trebol
 		palos.add("CR"); // corazon rojo
-		palos.add("D "); // diamante
+		palos.add("D"); // diamante
 		
-		String [] valores = {" A"," 2"," 3"," 4"," 5"," 6"," 7"," 8"," 9","10"," J"," Q"," K"};
+		String [] valores = {"A","2","3","4","5","6","7","8","9","10","J","Q","K"};
 		
 		for (int i = 0; i < palos.size(); i++) {
 	        for (int j = 0; j < valores.length; j++) {
