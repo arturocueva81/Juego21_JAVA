@@ -30,8 +30,8 @@ public class Carta {
 	
 	public void imprimir() {
 		System.out.print("Carta: "+valor);
-		System.out.print(" Palo: "+palo);
-		System.out.print(" Valor Juego: "+valorJuego+"\n");
+		System.out.print(" |Palo: "+palo);
+		System.out.print(" |Valor Juego: "+valorJuego+"\n");
 		
 
 	}
