@@ -27,31 +27,22 @@ public class TestJuego21 {
         juego.agregarJugador(j2);
         juego.agregarJugador(j3);
         
-        //8 invoca repartirRonda
-        juego.repartirRonda();
-        //9 CalulcarTotal -- acumula puntaje de cada ronda
-        juego.repartirRonda();
-        juego.repartirRonda();
+        //11 Metodo jugar
+        ArrayList<Jugador> ganadores =juego.jugar();
         
-        System.out.println("PUNTAJES");
+        System.out.println("\nPUNTAJES FINALES: ");
         for (int i = 0; i < juego.getJugadores().size(); i++) {
             juego.getJugadores().get(i).imprimir();
         }
-
-        System.out.println("\nCartas restantes en naipe: "+ juego.getDealer().getNaipe().size());
         
-        ArrayList<Jugador> ganadores = juego.validarGanador();
-
-        System.out.println("\nGANADORES CON 21");
+        System.out.println("\nRESULTADO FINAL: ");
         if (ganadores.size() > 0) {
             for (int i = 0; i < ganadores.size(); i++) {
-                System.out.println("Ganador: " + ganadores.get(i).getNickname()
-                        + " | Puntaje: " + ganadores.get(i).getPuntajeCartas());
+                System.out.println("Ganador: " + ganadores.get(i).getNickname()+ " | Puntaje: " + ganadores.get(i).getPuntajeCartas());
             }
         } else {
-            System.out.println("Ningún jugador alcanzó 21 en esta ronda");
+            System.out.println("Ningún jugador alcanzó 21 en 3 rondas");
         }
-
 
 	}
 

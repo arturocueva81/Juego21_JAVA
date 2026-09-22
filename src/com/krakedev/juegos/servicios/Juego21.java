@@ -97,4 +97,28 @@ public class Juego21 {
         
         return ganadores;
     } 
+    
+    //11 metodo Jugar
+    public ArrayList<Jugador> jugar() {
+        ArrayList<Jugador> ganadores = new ArrayList<Jugador>();
+
+        for (int ronda = 1; ronda <= 3; ronda++) {
+            System.out.println("RONDA: " + ronda);
+
+            // invocar a repartirRonda
+            repartirRonda();
+
+            // Validar ganador
+            ganadores = validarGanador();
+
+            // si hay uno o más ganadores hacer un break
+            if (ganadores.size() > 0) {
+                System.out.println(" Hay ganador(es) en la ronda " + ronda);
+                break;
+            }
+        }
+
+        // retornar los ganadores
+        return ganadores;
+    }
 }
