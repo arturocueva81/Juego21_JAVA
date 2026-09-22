@@ -83,5 +83,18 @@ public class Juego21 {
             jugador.setPuntajeCartas(total);
         }
     }
+    
+    //10 validar Ganador
+    public ArrayList<Jugador> validarGanador() {
+        ArrayList<Jugador> ganadores = new ArrayList<Jugador>();
 
+        for (int i = 0; i < jugadores.size(); i++) {
+            Jugador jugador = jugadores.get(i);
+            if (jugador.getPuntajeCartas() == 21) {
+                ganadores.add(jugador);
+            }
+        }
+        
+        return ganadores;
+    } 
 }

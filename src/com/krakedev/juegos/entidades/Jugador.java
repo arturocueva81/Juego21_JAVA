@@ -39,7 +39,7 @@ public class Jugador {
 	
 	//7 metodo imprimir
 	public void imprimir() {
-	    System.out.println("Jugador: " + nickname +", Puntaje: "+puntajeCartas);
+	    System.out.println("\n-- JUGADOR: " + nickname +", Puntaje: "+puntajeCartas);
 	    for (Carta carta : cartas) {
 	        carta.imprimir();
 	    }
