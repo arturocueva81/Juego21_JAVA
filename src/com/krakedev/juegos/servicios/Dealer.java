@@ -58,4 +58,14 @@ public class Dealer {
 		int aleatorio = (int) (Math.random()*(maximo+1));
 		return aleatorio;
 	}
+	
+	//5 Metodo entregarCarta
+	public Carta entregarCarta() {
+	   
+	    int indice = generarAleatorio(naipe.size() - 1);
+	    Carta carta = naipe.get(indice);
+	    naipe.remove(indice);
+	    return carta;
+	}
+	
 }
