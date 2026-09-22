@@ -7,8 +7,11 @@ public class TestJuego21 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		//8 Prueba del juego
 		Juego21 juego = new Juego21();
-        juego.inicializar();
+        
+		//8 invoca inicializar
+		juego.inicializar();
 
         Jugador j1 = new Jugador();
         j1.setNickname("J_Uno");
@@ -17,17 +20,23 @@ public class TestJuego21 {
         Jugador j3 = new Jugador();
         j3.setNickname("J_Tres");
 
+        //8 agrega 3 jugadores
         juego.agregarJugador(j1);
         juego.agregarJugador(j2);
         juego.agregarJugador(j3);
+        
+        //8 invoca repartirRonda
         juego.repartirRonda();
-
-        System.out.println("RONDA 1");
+        //9 CalulcarTotal -- acumula puntaje de cada ronda
+        juego.repartirRonda();
+        
+        System.out.println("PUNTAJES");
         for (int i = 0; i < juego.getJugadores().size(); i++) {
             juego.getJugadores().get(i).imprimir();
         }
 
-        System.out.println("Cartas restantes en baraja: "+ juego.getDealer().getNaipe().size());
+        System.out.println("\nCartas restantes en naipe: "+ juego.getDealer().getNaipe().size());
+
 
 	}
 
